@@ -199,6 +199,7 @@ the distance between two vectors
 ```python
 print(l1_distance([1,2], [3,4]))
 ```
+
 **Implementation/Code:**
 ```python
 def l1_distance(u, v):
@@ -207,18 +208,25 @@ def l1_distance(u, v):
         distance += abs(i - j)  
     return distance
 ``` 
+
 ## L1 Norm
+
 **Routine Name:** l_1_norm
+
 **Description/Purpose:** 
 computes the normal of a vector in L1 space
+
 **Input:** 
 a vector
+
 **Output:**
 the norm of that vector
+
 **Usage/Example:**
 ```python
 print(l_1_norm([1,2,3]))
 ```
+
 **Implementation/Code:**
 ```python
 def l_1_norm(vector):
@@ -240,10 +248,12 @@ two vectors of the same size
 
 **Output:**
 the distance between those two vectors
+
 **Usage/Example:**
 ```python
 print(l2_distance([1,5,3], [3,2,1]))
 ```
+
 **Implementation/Code:**
 ```python
 def l2_distance(u, v):
@@ -255,17 +265,23 @@ def l2_distance(u, v):
 ```  
 
 ## L2 Norm
+
 **Routine Name:** l_2_norm
+
 **Description/Purpose:** 
 returns the normal of a vector in L2 space
+
 **Input:** 
 a vector
+
 **Output:**
 the normal of that vector
+
 **Usage/Example:**
 ```python
 print(l_2_nom([1,2,3]))
 ```
+
 **Implementation/Code:**
 ```python
 def l_2_norm(vector):
@@ -276,17 +292,23 @@ def l_2_norm(vector):
 ``` 
 
 ## LInfinity Distance
+
 **Routine Name:** infinity_distance
+
 **Description/Purpose:** 
 gets the distance between two vectors in infinity space
+
 **Input:** 
 two vectors
+
 **Output:**
 the distance between those two vectors
+
 **Usage/Example:**
 ```python
 print(infinity_distance([1,2,3], [100, 1000, 10000]))
 ```
+
 **Implementation/Code:**
 ```python
 def infinity_distance(u, v):
@@ -294,17 +316,23 @@ def infinity_distance(u, v):
 ``` 
 
 ## LInfinity Norm
+
 **Routine Name:** infinity_norm
+
 **Description/Purpose:** 
 gets the normal of a vector in infinity space
+
 **Input:** 
 a vector
+
 **Output:**
 the normal of that vector
+
 **Usage/Example:**
 ```python
 print(infinity_norm([1,100,11]))
 ```
+
 **Implementation/Code:**
 ```python
 def infinity_norm(vector):
@@ -317,15 +345,21 @@ def infinity_norm(vector):
 ``` 
 
 ## Identity Matrix
+
 **Routine Name:** identity_matrix
+
 **Description/Purpose:** 
 returns the identity matrix of size N
+
 **Input:** 
 the size of the NxN matrix
+
 **Output:**
 the identity of that matrix
+
 **Usage/Example:**
 was used in the shifted_inverse_power_method
+
 **Implementation/Code:**
 ```python
 def identity_matrix(size):
@@ -333,15 +367,21 @@ def identity_matrix(size):
 ``` 
 
 ## Matrix Addition
+
 **Routine Name:** matrix_addition
+
 **Description/Purpose:** 
 Gets the sum of two matrices and returns their sums in a new matrix
+
 **Input:** 
 two NxN matrices
+
 **Output:**
 an NxN matrix with their sums
+
 **Usage/Example:**
 used all over in root finding methods section
+
 **Implementation/Code:**
 ```python
 def matrix_addition(A, B):
@@ -349,15 +389,21 @@ def matrix_addition(A, B):
 ``` 
 
 ## Scalar Multiplication
+
 **Routine Name:** scalar_matrix_multiply
+
 **Description/Purpose:** 
 multiplies a matrix by a scalar
+
 **Input:** 
 a matrix and a scalar
+
 **Output:**
 the matrix multiplied by the scalar
+
 **Usage/Example:**
 used in root finding methods section
+
 **Implementation/Code:**
 ```python
 def scalar_multiply_matrix(scalar, matrix):
@@ -365,15 +411,21 @@ def scalar_multiply_matrix(scalar, matrix):
 ``` 
 
 ## Matrix Multiplication
+
 **Routine Name:** matrix_vector_multiply
+
 **Description/Purpose:** 
 does the dot product on two matrices
+
 **Input:** 
 a matrix and a vector
+
 **Output:**
 their newly multiplied matrix
+
 **Usage/Example:**
 used in root finding section
+
 **Implementation/Code**
 ```python
 def matrix_vector_multiply(matrix, vector):
@@ -381,15 +433,21 @@ def matrix_vector_multiply(matrix, vector):
 ```
 
 ## Vector Subtraction
+
 **Routine Name:**  vector_subtraction
+
 **Description/Purpose:** 
 subtracts two vectors
+
 **Input:** 
 two vectors
+
 **Output:**
 a vector resulting from the two vectors subtracting
+
 **Usage/Example:**
 used in root finding section
+
 **Implementation/Code:**
 ```python
 def vector_subtract(v1, v2):
@@ -397,15 +455,21 @@ def vector_subtract(v1, v2):
 ``` 
 
 ## Normalizing a Vector
+
 **Routine Name:** normalize_vector, vector_norm
+
 **Description/Purpose:** 
 gets the norm of a vector and divides it by a maginitude to get a normalized vector
+
 **Input:** 
 a vector to get the norm and magnitude
+
 **Output:**
 a normalized vector
+
 **Usage/Example:**
 used in root finding section
+
 **Implementation/Code:**
 ```python
 def vector_norm(vector):
@@ -417,7 +481,9 @@ def normalize_vector(vector):
 ``` 
 
 # Methods for Solving Linear Systems of Equations
+
 ## Back Substitution
+
 **Routine Name:**           back_substitution
 
 **Description/Purpose:** 
@@ -492,6 +558,7 @@ def forward_substitution(L, b):
 ```
 
 ## Forward Elimination
+
 **Routine Name:**           forward_elimination
 
 **Description/Purpose:** 
@@ -541,6 +608,7 @@ def forward_elimination(A, b):
 ```
 
 ## LU Factorization
+
 **Routine Name:**           lu_factorization.lu_decomposition
 
 **Description/Purpose:** 
@@ -582,6 +650,7 @@ def lu_decomposition(A):
 ``` 
 
 ## Gaussian Elimination
+
 **Routine Name:**           gaussian_elimination
 
 **Description/Purpose:** 
@@ -608,14 +677,20 @@ def gaussian_elimination(A, b):
 
 
 # Eigenvalue Finding Methods
+
 ## The Power Method
+
 **Routine Name:** power_method
+
 **Description/Purpose:** 
 the power method is a computational way to approximate the largest eigenvalue of a matrix
+
 **Input:** 
 a matrix, an intial guess, a tolerance for approximation, and a max number of iterations
+
 **Output:**
 an approximated eigenvalue
+
 **Usage/Example:**
 ```python
 A = [[4, 2], [1, 3]]
@@ -626,6 +701,7 @@ max_iter = 1000
 max_value = power_method(A, n, tol, max_iter)
 print("Largest Eigenvalue:", max_value)
 ```
+
 **Implementation/Code:**
 ```python
 def power_method(matrix, guess, tol, max_iter):
@@ -641,13 +717,18 @@ def power_method(matrix, guess, tol, max_iter):
 ```
 
 ## Inverse Power Method
+
 **Routine Name:** inverse_power_method
+
 **Description/Purpose:** 
 Used to approximate the smallest eigenvalue of a matrix
+
 **Input:** 
 a matrix, an initial guess, a tolerace for approximation, and a max number of iterations
+
 **Output:**
 an approximation of the smallest eigenvalue of a matrix
+
 **Usage/Example:**
 ```python
 A = [[4, 2], [1, 3]]
@@ -657,6 +738,7 @@ max_iter = 1000
 smallest_eigenvalue = inverse_power_method.inverse_power_method(A, n, tol, max_iter)
 print("Smallest Eigenvalue:", smallest_eigenvalue)
 ```
+
 **Implementation/Code:**
 ```python
 def inverse_power_method(matrix, guess, tol, max_iter):
@@ -678,15 +760,21 @@ def inverse_power_method(matrix, guess, tol, max_iter):
 ```
 
 ## Shifted Inverse Power Method
+
 **Routine Name:** shifted_inverse_power_method
+
 **Description/Purpose:** 
 allows a user to target specific eigenvalues that don't have to be the largest in magnitude. For the homework I was to find the midpoint between the smallest and largest eigenvalue
+
 **Input:** 
 a matrix, an initial guess, a shift, a tolerace for approximation, and a max number of iterations
+
 **Output:**
 the targeted eigenvalue
+
 **Usage/Example:**
 look at homework_7.py in lib/Homework_7, its too much to put here. Look at the partitions example.
+
 **Implementation/Code:**
 ```python
 def shifted_inverse_power_method(matrix, guess, shift, tol, max_iter):
@@ -695,13 +783,20 @@ def shifted_inverse_power_method(matrix, guess, shift, tol, max_iter):
 ``` 
 
 # Root Finding Methods
+
 ## Newtons Method
+
 **Routine Name:** newtons_method
+
 **Description/Purpose:** 
 one of various ways to computationally approximate finding roots of real valued functions. Requires the knowledge of the derivative of the function you are trying to find roots for
+
 **Input:** 
 an initial guess, a tolerance for approximation, and a max number of iterations
+
 **Output:**
+found roots
+
 **Usage/Example:**
 ```python
 tolerance = 1e-6
@@ -716,6 +811,7 @@ root2 = newtons_method(3, tolerance, max_iterations)
 print("Root near 2:", root1)
 print("Root near 3:", root2)
 ```
+
 **Implementation/Code:**
 ```python
 def f(x):
@@ -735,13 +831,18 @@ def newtons_method(initial_guess, tol, max_iter):
 ``` 
 
 ## The Secant Method
+
 **Routine Name:** secant_method
+
 **Description/Purpose:** 
 another useful technique that improves on Newtons method by not requiring the knowledge of a second derivative
+
 **Input:**
 two initial guesses for roots and a tolerance for approximation
+
 **Output:**
 a tuple that has both approximated roots
+
 **Usage/Example:**
 ```python
 tolerance = 1e-6
@@ -756,6 +857,7 @@ root2 = secant_method(2.5, 3.5, tolerance, max_iterations)
 print("Root near 2:", root1)
 print("Root near 3:", root2)
 ```
+
 **Implementation/Code:**
 ```python
 def secant_method(x0, x1, tol):
@@ -770,13 +872,18 @@ def secant_method(x0, x1, tol):
 ``` 
 
 ## The Bisection Method
+
 **Routine Name:** bisection_method
+
 **Description/Purpose:** 
 useful for finding roots of continuous functions with sign changes also known as the binary search
+
 **Input:** 
 two intervals where a root is believed to be found and a tolerance for approximation
+
 **Output:**
 the approximated root being looked for
+
 **Usage/Example:**
 ```python
 intervals = [(1, 2.5), (2.5, 4)]  # Adjusted intervals
@@ -790,6 +897,7 @@ for interval in intervals:
 
 print("Roots:", roots)
 ```
+
 **Implementation/Code:**
 ```python
 def bisection_method(a, b, tol):
@@ -809,15 +917,20 @@ def bisection_method(a, b, tol):
 ```  
 
 ## A Hybrid Method
+
 **Routine Name:** hybrid_method with helper function bisection_for_interval
+
 **Description/Purpose:** 
 uses the bisection method to narrow down the location of a root and the secant method to speed up finding that root
+
 **Input:** 
 for the bisection_for_interval you need two values that make up an interval and a tolerance for approximation
 
 for the secant method written a little differently, the interval is actually a tuple with the interval for finding the location of roots, and a tolerance for approximation
+
 **Output:**
 found roots
+
 **Usage/Example:**
 ```python
 # Example usage
@@ -832,6 +945,7 @@ for interval in intervals:
 
 print("Roots:", roots)
 ```
+
 **Implementation/Code:**
 ```python
 def bisection_for_interval(a, b, tol):
@@ -859,14 +973,20 @@ def hybrid_method(interval, tol):
 ``` 
 
 # Optimizing Methods
+
 ## Jacobi Iteration
+
 **Routine Name:** jacobi_iteration
+
 **Description/Purpose:** 
 uses the jacobi method to find solutions to linear systems of equations for diagonlly dominant matricies. tested on a 100x100 matrix
+
 **Input:** 
 a diagonally dominant matrix, an augment, a tolerance for approximation, and a max iterations
+
 **Output:**
 n solutions where n is the size of the diagonally dominant matrix and a count of operations performed
+
 **Usage/Example:**
 ```python
 # Parameters
@@ -885,6 +1005,7 @@ print()
 print("Jacobi Solution:")
 print(jacobi_iteration_solution)
 ```
+
 **Implementation/Code:**
 ```python
 def jacobi_iteration(matrix, b, tolerance=1e-10, max_iterations=1000):
@@ -917,13 +1038,18 @@ def jacobi_iteration(matrix, b, tolerance=1e-10, max_iterations=1000):
 ``` 
 
 ## Gauss-Seidel Iteration
+
 **Routine Name:** gauss_seidel
+
 **Description/Purpose:** 
 an alternative iteration method to solve linear systems of equations that converges to solutions faster but cannot parallelize as well as the jacobi method.
+
 **Input:** 
 a diagonally dominant matrix, a solutions vector, a tolerance for approximation, and a max number of iterations
+
 **Output:**
 solutions to the systems of equations and a count of operations performed in a tuple
+
 **Usage/Example:**
 ```python
 gauss_seidel_solution, gs_count = gauss_seidel.gauss_seidel(A, b, tolerance, max_iterations)
@@ -933,6 +1059,7 @@ print("Gauss-Seidel Solution:")
 print(gauss_seidel_solution)
 ```
 gauss_seidel_solution, gs_count = gauss_seidel.gauss_seidel(A, b, tolerance, max_iterations)
+
 **Implementation/Code:**
 ```python
 import numpy as np
@@ -966,13 +1093,18 @@ def gauss_seidel(matrix, b, tolerance=1e-10, max_iterations=1000):
 ``` 
 
 # Comparing Jacobi, Gauss-Seidel, and LU Factorization
+
 **Routine Name:** lu_decomposition
+
 **Description/Purpose:** 
 updated to include a counter and better written lu factorization in order to compare number of operations performed
+
 **Input:** 
 a diagonally dominant matrix
+
 **Output:**
 solutions and a count of operations
+
 **Usage/Example:**
 ```python
 # Compare LU Factorization, Jacobi, and Gauss-Seidel operations
@@ -998,6 +1130,7 @@ print(f"{jacobi_count} | {gs_count}       | {lu_count}")
 print("-----------------------------------------")
 print()
 ```
+
 **Implementation/Code:**
 ```python
 def lu_decomposition(matrix):
@@ -1036,11 +1169,29 @@ def lu_decomposition(matrix):
 # Leslie Matrices
 
 ## Leslie Matrices and the Power Method
-**Routine Name:**
+
+**Routine Name:** leslie_power_method
+
 **Description/Purpose:**
+Finds the eigenvalue of a leslie matrix using a modified power method
+
 **Input:** 
+a leslie matrix, a vector in that can be multiplied by the leslie matrix, a tolerance for approximation, and a max number of iterations
+
 **Output:**
+the max eigenvalue of the leslie matrix
+
 **Usage/Example:**
+```python
+# Example usage
+leslie_matrix = [[0.1, 2.0, 1.5, 0.5], [0.5, 0, 0, 0], [0, 0.7, 0, 0], [0, 0, 0.9, 0]]
+n = [1, 1, 1, 1]
+tol = 1e-6
+max_iter = 1000
+
+max_value = leslie.leslie_power_method(leslie_matrix, n, tol, max_iter)
+print("Largest Eigenvalue of Leslie:", max_value)
+```
 **Implementation/Code**
 ```python
 def leslie_matrix_vector_multiply(leslie_matrix, vector):
@@ -1065,13 +1216,18 @@ def leslie_power_method(leslie_matrix, n, tol, max_iter):
 ```
 
 ## Leslie Matrices and Jacobian Iteration
+
 **Routine Name:** jacobi_iteration (for leslie_jacobi.py)
+
 **Description/Purpose:**
 uses the jacobi method to provide new population vector with a multiplication modification. Note that otherwise this method could not work. Also there are other problems that arise with approximations and convergence not being guaranteed.
+
 **Input:** 
 a leslie matrix, an initial population vector, max iterations, and a tolerance for approximations
+
 **Output:**
 a new population vector
+
 **Usage/Example:**
 ```python
 leslie_matrix = np.array([[0, 2, 0.1],
@@ -1087,6 +1243,7 @@ stable_population = jacobi_iteration(leslie_matrix, initial_population)
 print("Stable Population Distribution:")
 print(stable_population)
 ```
+
 **Implementation/Code**
 ```python
 import numpy as np
@@ -1109,11 +1266,14 @@ def jacobi_iteration(leslie_matrix, initial_population, max_iterations=1000, tol
     return population
 ```
 
-
 # Matrix Generators
+
 ## Diagonally Dominant Matrix
+
 **Routine Name:** create_diagonally_dominant_matrix
+
 **Description/Purpose:** generates an NxN matrix that is diagonally dominant
+
 **Input:** 
 n - size
 **Output:**
@@ -1125,6 +1285,7 @@ A = diagonal_matrix_generator.create_diagonally_dominant_matrix(n)
 # generate n values for a b vector
 b = [random.random() for _ in range(n)]
 ```
+
 **Implementation/Code:**
 ```python
 import random
@@ -1138,6 +1299,7 @@ def create_diagonally_dominant_matrix(n):
     return matrix
 ``` 
 # openMP
+
 ## Jacobi Iteration Optimized
 ```c
 #include <stdio.h>
@@ -1291,6 +1453,7 @@ int main()
 }
 
 ```
+
 ## The Power Method Optimized
 ```c
 #include <stdio.h>
